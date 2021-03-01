@@ -15,3 +15,9 @@ sources:
 maintainers:
 - name: asdfffffff
   email: afdsafds@mailinator.com
+metadata:
+  name: hello-world
+  labels:
+    app: hello-world
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
