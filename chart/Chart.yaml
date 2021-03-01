@@ -36,6 +36,8 @@ env: {}
   # PGID: 1001
 
 service:
+  enabled: true
+  type: ClusterIP
   port:
     port: 9117
 
@@ -65,3 +67,10 @@ persistence:
     # existingClaim: ""
 
 replicas: 1
+controllerType: deployment
+
+strategy:
+  ## For Deployments, valid values are Recreate and RollingUpdate
+  ## For StatefulSets, valid values are OnDelete and RollingUpdate
+  ## DaemonSets ignore this
+  type: RollingUpdate
