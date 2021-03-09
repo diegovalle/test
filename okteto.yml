@@ -1,0 +1,12 @@
+name: test
+autocreate: true
+image: linuxserver/jackett
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- .:/usr/src/app
+forward:
+- 9117:9117
+reverse:
+- 9000:9000
