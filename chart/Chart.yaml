@@ -21,7 +21,14 @@ metadata:
     app: hello-world
   annotations:
     dev.okteto.com/auto-ingress: "true"
-
+spec:
+  type: ClusterIP
+  ports:
+    - port: 9117
+      protocol: TCP
+      targetPort: 9117
+  selector:
+    app: hello-world
 image:
   repository: linuxserver/jackett
   pullPolicy: IfNotPresent
