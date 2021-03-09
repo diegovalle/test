@@ -3,7 +3,7 @@ autocreate: true
 image: linuxserver/jackett
 command: bash
 volumes:
-- /root/.cache/pip
+- /config
 sync:
 - .:/usr/src/app
 forward:
