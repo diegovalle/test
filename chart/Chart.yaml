@@ -24,8 +24,10 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - name: "hello-world"
-    port: 9117
+    - port: 9117
+      targetPort: 9117
+      protocol: TCP
+      name: http
   selector:
     app: hello-world
 image:
