@@ -22,10 +22,11 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
-  - name: "hello-world"
-    port: 9117
+    - port: 9117
+      protocol: TCP
+      targetPort: 80
   selector:
     app: hello-world
 image:
