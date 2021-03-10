@@ -7,6 +7,6 @@ volumes:
 sync:
 - .:/usr/src/app
 forward:
-- 9117:9117
+- 9117:80
 reverse:
 - 9000:9000
