@@ -1,4 +1,4 @@
-name: test
+name: hello-world
 autocreate: true
 image: linuxserver/jackett
 command: bash
