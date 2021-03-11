@@ -3,7 +3,6 @@ services:
   fastapi:
     public: true
     image: linuxserver/jackett:latest
-    build: .
     replicas: 1
     ports:
       - 9117
