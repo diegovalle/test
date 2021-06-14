@@ -1,4 +1,7 @@
 name: jackett
+labels:
+  app.kubernetes.io/part-of: vote
+  app.kubernetes.io/component: api
 services:
   jackett:
     public: true
