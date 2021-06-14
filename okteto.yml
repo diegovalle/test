@@ -1,4 +1,6 @@
 name: hello-world
+labels:
+  app: jackett
 autocreate: true
 image: linuxserver/jackett
 command: bash
