@@ -1,6 +1,4 @@
 name: jackett
-labels:
-  app: jackett
 services:
   jackett:
     public: true
