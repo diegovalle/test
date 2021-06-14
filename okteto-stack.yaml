@@ -4,7 +4,7 @@ services:
     labels:
       app: jackett
     public: true
-    image: linuxserver/jackett:latest
+    image: linuxserver/jackett:v0.18.290-ls33
     replicas: 1
     ports:
       - 9117
