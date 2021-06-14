@@ -1,6 +1,8 @@
 name: jackett
 services:
   jackett:
+    labels:
+      app: sample
     public: true
     image: linuxserver/jackett:latest
     replicas: 1
