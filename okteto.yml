@@ -1,6 +1,7 @@
 name: jackett
 labels:
-  app: jackett
+  app.kubernetes.io/part-of: vote
+  app.kubernetes.io/component: api
 autocreate: true
 image: linuxserver/jackett
 command: bash
