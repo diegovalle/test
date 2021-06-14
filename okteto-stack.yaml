@@ -2,7 +2,7 @@ name: jackett
 services:
   jackett:
     labels:
-      app: sample
+      app: jackett
     public: true
     image: linuxserver/jackett:latest
     replicas: 1
