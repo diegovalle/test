@@ -1,8 +1,6 @@
 name: jackett
 services:
   jackett:
-    labels:
-      app: jackett
     public: true
     image: linuxserver/jackett:v0.18.290-ls33
     replicas: 1
